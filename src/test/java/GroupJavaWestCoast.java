@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class IliaPTest {
+public class GroupJavaWestCoast {
 
     WebDriver driver;
 
-    public void signInMethod(){
+    public void signInMethodIliaP(){
         WebElement login = driver.findElement(By.xpath("//a[text()='Log In']"));
         login.click();
 
@@ -36,7 +36,6 @@ public class IliaPTest {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
-        driver.get("https://www.codewars.com/");
     }
 
     @AfterMethod
@@ -46,9 +45,11 @@ public class IliaPTest {
 
 
     @Test
-    public void testSelenium() {
+    public void testIliaP() {
 
-        signInMethod();
+        driver.get("https://www.codewars.com/");
+
+        signInMethodIliaP();
 
         WebElement scoreButton = driver.findElement(By.xpath("//div[@class='ml-10px is-inline']"));
         String actualValue = "Honor:" + scoreButton.getText();
@@ -61,9 +62,11 @@ public class IliaPTest {
     }
 
     @Test
-    public void kyuLevelTest(){
+    public void testIliaPTwo(){
 
-        signInMethod();
+        driver.get("https://www.codewars.com/");
+
+        signInMethodIliaP();
 
         WebElement scoreButton = driver.findElement(By.xpath("//div[@class='ml-10px is-inline']"));
         scoreButton.click();
