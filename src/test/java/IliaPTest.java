@@ -85,7 +85,6 @@ public class IliaPTest {
                 resultActual += actualValue.charAt(i+1);
             }
         }
-
         Assert.assertEquals(resultActual,resultExpected);
     }
 }
