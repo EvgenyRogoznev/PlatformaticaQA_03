@@ -19,10 +19,10 @@ public class IliaPTest {
         login.click();
 
         WebElement emailField = driver.findElement(By.id("user_email"));
-        emailField.sendKeys("ponomid@ya.ru");
+        emailField.sendKeys("testing@testing.com");
 
         WebElement passwordField = driver.findElement(By.id("user_password"));
-        passwordField.sendKeys("Smmtool88");
+        passwordField.sendKeys("Test88");
 
         WebElement signInButton = driver.findElement(By.xpath("//button[text()='Sign in']"));
         signInButton.click();
@@ -76,7 +76,6 @@ public class IliaPTest {
                 resultExpected += expectedValue.charAt(i+1);
             }
         }
-
         WebElement overallField = driver.findElement(By.xpath("//b[text()=\"Overall:\"]/.."));
         String actualValue = overallField.getText();
         String resultActual = "";
