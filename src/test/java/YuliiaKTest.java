@@ -43,6 +43,7 @@ public class YuliiaKTest {
         divinationGoldFish.click();
 
         String actualResult = driver.getCurrentUrl();
+
         Assert.assertEquals(actualResult, expectedResult);
 
     }
@@ -63,6 +64,7 @@ public class YuliiaKTest {
         queenKatya.click();
 
         String actualResult = driver.getCurrentUrl();
+
         Assert.assertEquals(actualResult, expectedResult);
 
     }
